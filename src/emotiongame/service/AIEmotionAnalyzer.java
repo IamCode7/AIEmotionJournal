@@ -10,8 +10,8 @@ import com.openai.models.responses.StructuredResponseCreateParams;
 
 public class AIEmotionAnalyzer {
 
-    // 사용자에게 하루 일기에 대한 답변을 받아서 AI 호출
-    public EmotionResult analyze(String answer) {
+        // 사용자에게 하루 일기에 대한 답변을 받아서 AI 호출
+        public EmotionResult analyze(String answer) {
 
         // openAI 서버에 요청을 보낼 수 있는 클라이언트 객체 생성
         //OpenAIClient client = OpenAIOkHttpClient.fromEnv();
@@ -34,7 +34,7 @@ public class AIEmotionAnalyzer {
                 사용자 일기:
                 """ + answer;
 
-        String API_KEY = "본인 api입력";
+        String API_KEY = "API_KEY";
 
         // AI 클라이언트 설정
         OpenAIClient client = OpenAIOkHttpClient.builder()

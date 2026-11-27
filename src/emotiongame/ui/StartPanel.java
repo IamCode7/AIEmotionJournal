@@ -18,7 +18,7 @@ public class StartPanel extends JPanel {
         add(title);
 
         // < 이미지 파일 가지고 오기 >
-        URL imageUrl = getClass().getResource("/images/nest/test.png");
+        URL imageUrl = getClass().getResource("/images/MainImage/test.png");
         // - getClass() : 현재 객체의 클래스 정보를 가지고 옴
 
         // < 클래스 패스 확인 코드 >

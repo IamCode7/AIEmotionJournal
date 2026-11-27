@@ -34,7 +34,7 @@ public class AIEmotionAnalyzer {
                 사용자 일기:
                 """ + answer;
 
-        String API_KEY = "API_KEY";
+        String API_KEY = "YOUR_API_KEY";
 
         // AI 클라이언트 설정
         OpenAIClient client = OpenAIOkHttpClient.builder()

@@ -19,7 +19,7 @@ public class StartPanel extends JPanel {
 
         // < 이미지 파일 가지고 오기 >
         URL imageUrl = getClass().getResource("/images/nest/test.png");
-        // - getClass() : 현재 클래스 패스를 가지고 옴
+        // - getClass() : 현재 객체의 클래스 정보를 가지고 옴
 
         // < 클래스 패스 확인 코드 >
         System.out.println("클래스 패스 : " + System.getProperty("java.class.path"));
@@ -35,12 +35,12 @@ public class StartPanel extends JPanel {
         Image image = imageIcon.getImage();
         Image scaledImage = image.getScaledInstance(360, 180, Image.SCALE_REPLICATE);
         JLabel imageLabel = new JLabel(new ImageIcon(scaledImage));
-        imageLabel.setBounds(160, 175, 180,180);
+        imageLabel.setBounds(70, 195, 360,180);
         add(imageLabel);
         // - ImageIcon : 자바 스윙에서 이미지를 읽고 화면에 표시하기 위함
         // - Image : 이미지를 수정하기위한 클래스
         // - getScaledInstance : 이미지 크기 조절( 가로 , 세로 , 경계 )
-        // - setBounds : 위치와 크기 설정
+        // - setBounds : JLabel의 위치와 크기 ( 이안에 이미지를 붙임 )
 
         // < 게임 시작 버튼 >
         JButton startButton = new JButton("게임 시작");

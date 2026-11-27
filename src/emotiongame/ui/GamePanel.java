@@ -9,6 +9,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+
 // 게임 화면 - 패널
 public class GamePanel extends JPanel {
 
